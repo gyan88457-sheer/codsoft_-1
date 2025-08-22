@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hud-container">
+        <div class="header">
+            <h1>SYSTEM LOCK</h1>
+            <p>// GUESS THE PASSCODE //</p>
+        </div>
+        
+        <div class="game-display">
+            <p id="message-text">AWAITING INPUT...</p>
+        </div>
+
+        <div class="game-input-area">
+            <input type="number" id="guess-input" placeholder="#">
+            <button id="guess-button">EXECUTE</button>
+        </div>
+        
+        <div class="info-grid">
+            <div class="info-box">
+                <h3>ATTEMPTS</h3>
+                <p id="attempts-left">10</p>
+            </div>
+            <div class="info-box">
+                <h3>ROUNDS WON</h3>
+                <p id="rounds-won">0</p>
+            </div>
+            <div class="info-box">
+                <h3>TOTAL SCORE</h3>
+                <p id="total-score">0</p>
+            </div>
+        </div>
+        
+        <button id="play-again-button" class="hidden">REBOOT SEQUENCE</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
